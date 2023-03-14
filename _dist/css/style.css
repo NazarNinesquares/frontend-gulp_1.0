@@ -77,6 +77,11 @@ textarea {
   font-weight: 400;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 h1,
 h2,
 h3,
