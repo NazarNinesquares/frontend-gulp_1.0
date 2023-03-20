@@ -63,7 +63,8 @@ button {
 }
 
 input,
-textarea {
+textarea,
+select {
 	resize: none;
 	outline: none;
 	border: none;
@@ -71,6 +72,10 @@ textarea {
 	font-family: $ff;
 	font-size: $fs;
 	font-weight: $fw;
+	color: $fc;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -78,9 +83,32 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 1000px transparent inset!important;
+	box-shadow: 0 0 0 1000px transparent inset!important;
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-text-fill-color: $fc;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: $ff;
 	font-size: $fs;
+	font-weight: $fw;
+}
+
+strong {
 	font-weight: $fw;
 }
 
