@@ -106,7 +106,6 @@ function css() {
 		cascade: true
 	}))
 	.pipe(dest(path.build.css))
-	// .pipe(dest(path.docs.css))
 	.pipe(clean_css({level: { 2: { specialComments: 0 } } }))
 	.pipe(rename({
 		extname: '.min.css'
@@ -120,7 +119,6 @@ function js() {
 	return src(path.src.js)
 	.pipe(fileInclude())
 	.pipe(dest(path.build.js))
-	// .pipe(dest(path.docs.js))
 	.pipe(uglify({
 		toplevel: true
 	}))

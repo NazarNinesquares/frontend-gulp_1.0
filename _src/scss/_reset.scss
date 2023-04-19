@@ -54,6 +54,7 @@ button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border-radius: 0px;
 	background-color: transparent;
 	font-family: $ff;
 	font-size: $fs;
@@ -76,6 +77,7 @@ select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border-radius: 0px;
 }
 
 input::-webkit-outer-spin-button,
