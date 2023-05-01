@@ -1,5 +1,7 @@
-$('.burger').on('click', function () {
-	$(this).toggleClass('_active');
-	$('.menu').toggleClass('_active');
-	$('body').toggleClass('_lock');
+var $ = jQuery;
+
+$(function() {
+
+	// custom scripts
+	
 })

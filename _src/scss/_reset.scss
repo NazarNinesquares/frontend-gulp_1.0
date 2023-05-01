@@ -113,26 +113,3 @@ h1,h2,h3,h4,h5,h6 {
 strong {
 	font-weight: $fw;
 }
-
-//<==================================================== DEFAULT ===================================================>\\
-
-body._lock {
-	overflow: hidden;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	overflow: hidden;
-}
-
-.main {
-	flex: 1 1 auto;
-}
-
-._cont {
-	max-width: $mw + 30px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
